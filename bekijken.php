@@ -18,7 +18,7 @@
 
     if (isset($_POST['zoek'])){
         var_dump($_POST);
-        
+
     }
 ?>
 <!doctype html>
