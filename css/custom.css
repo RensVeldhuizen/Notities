@@ -228,6 +228,10 @@ header.masthead p {
     font-weight: bold;
 }
 
+.table{
+    font-size: 12px;
+}
+
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
