@@ -12,14 +12,10 @@
 
     $sql = 'SELECT * 
             FROM notities 
-            ORDER BY id DESC LIMIT 15';
+            ORDER BY id DESC LIMIT 10';
 
     $query = mysqli_query($conn, $sql);
 
-    if (isset($_POST['zoek'])){
-        var_dump($_POST);
-
-    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,6 +34,7 @@
         <title>Notities telefoon</title>
     </head>
     <body id="page-top">
+    
     <nav id="mainNav" class="navbar navbar-light ">
         <div class="container">
             <div class="" id="navbarResponsive">
@@ -50,8 +47,8 @@
                     </li>
                 </ul>
             </div>
-            <form class="form-inline">
-                <input id="zoek" class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="Search">
+            <form action="search.php" method="GET" class="form-inline">
+                <input name="search" id="zoek" class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoeken</button>
             </form>
         </div>
